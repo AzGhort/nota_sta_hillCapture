@@ -1,0 +1,279 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 88,
+			"width": 180
+		}
+	},
+	"inputs": [],
+	"outputs": [],
+	"properties": {
+		"0SS7MVXCdkzM3aJH1eYhvO1gTkbj3cDb": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 563,
+			"y": -3
+		},
+		"82ygap4uNo0zfQGgBTWWps36LPIqOzZ9": {
+			"height": 94,
+			"title": "store",
+			"width": 300,
+			"x": 728,
+			"y": -124
+		},
+		"85MVv9u3RGA5xUj5HRtwItFOm2JXiS3Z": {
+			"height": 92,
+			"title": "store",
+			"width": 131,
+			"x": 949,
+			"y": 217
+		},
+		"FkyXWVacjjIzl1Cw9z5ETjhdEEcYKzX6": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 954,
+			"y": 52
+		},
+		"So1wKvnQoupqsdHCg0MHMU75KyX6KQ2B": {
+			"height": 94,
+			"title": "store",
+			"width": 293,
+			"x": 924,
+			"y": 142
+		},
+		"UErZ6p6XJC91wzKMUF1vz0GsV1PEIWeW": {
+			"height": 190,
+			"title": "luaCondition",
+			"width": 194,
+			"x": 345,
+			"y": -37
+		},
+		"Wfcgpq2nWP4eyeHVHEGe6WoHMVASe3E3": {
+			"height": 90,
+			"title": "Common.move",
+			"width": 558,
+			"x": 1107,
+			"y": 116
+		},
+		"a8ZFFzEXcZz44sWE26HFv8lmTi1KiKSg": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 762,
+			"y": 174
+		},
+		"aP5sJFAj8MH9642W9oroIexDMTZHaXCS": {
+			"height": 90,
+			"title": "Common.move",
+			"width": 554,
+			"x": 937,
+			"y": -38
+		},
+		"cYEERbe36B4GLp6Lk5z5HM55SHvg9zOG": {
+			"height": 92,
+			"title": "store",
+			"width": 176,
+			"x": 733,
+			"y": 40
+		},
+		"f8ZOUoZD8xmUptj9wevhqDCKQpE4Yi75": {
+			"height": 72,
+			"title": "wait",
+			"width": 131,
+			"x": 1125,
+			"y": 55
+		},
+		"mwooIIJhoDTzq8VTjKC68ZKtTQGhTsA5": {
+			"height": 70,
+			"title": "roleSplit",
+			"width": 202,
+			"x": 716,
+			"y": -28
+		},
+		"s9cpM2B5fEWOO4yyTholBUZHrZoCjffX": {
+			"height": 54,
+			"title": "success",
+			"width": 132,
+			"x": 744,
+			"y": 230
+		},
+		"xNQCXZ6JrondOwFSFp0yZLNjy1WWQye5": {
+			"height": 100,
+			"title": "luaCondition",
+			"width": 194,
+			"x": 540,
+			"y": 150
+		},
+		"yIAv1sgCje0hJM6bRFrNkeNGF4pBj75E": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 191,
+			"y": 11
+		}
+	},
+	"roles": [ {
+		"categories": [ "nota_sta_hillCapture.bear" ],
+		"name": "Role 0"
+	}, {
+		"categories": [ "nota_sta_hillCapture.little_ones" ],
+		"name": "Role 2"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [ {
+				"children": [ {
+					"children": [],
+					"id": "82ygap4uNo0zfQGgBTWWps36LPIqOzZ9",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "var",
+						"value": "missionInfo"
+					}, {
+						"name": "value",
+						"value": "core.MissionInfo()"
+					}, {
+						"name": "scriptName",
+						"value": "store"
+					} ],
+					"scriptName": "store"
+				}, {
+					"children": [ {
+						"children": [],
+						"id": "aP5sJFAj8MH9642W9oroIexDMTZHaXCS",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "pos",
+							"value": "{x = missionInfo.enemyPositions[1].x, z = missionInfo.enemyPositions[1].z}"
+						}, {
+							"name": "fight",
+							"value": "true"
+						}, {
+							"name": "scriptName",
+							"value": "Common.move"
+						} ],
+						"scriptName": "Common.move"
+					}, {
+						"children": [ {
+							"children": [],
+							"id": "f8ZOUoZD8xmUptj9wevhqDCKQpE4Yi75",
+							"nodeType": "wait",
+							"parameters": [ {
+								"name": "time",
+								"value": 10
+							} ]
+						}, {
+							"children": [],
+							"id": "Wfcgpq2nWP4eyeHVHEGe6WoHMVASe3E3",
+							"nodeType": "luaCommand",
+							"parameters": [ {
+								"name": "pos",
+								"value": "{x=missionInfo.enemyPositions[1].x, z=missionInfo.enemyPositions[1].z}"
+							}, {
+								"name": "fight",
+								"value": "false"
+							}, {
+								"name": "scriptName",
+								"value": "Common.move"
+							} ],
+							"scriptName": "Common.move"
+						} ],
+						"id": "FkyXWVacjjIzl1Cw9z5ETjhdEEcYKzX6",
+						"nodeType": "sequence",
+						"parameters": []
+					} ],
+					"id": "mwooIIJhoDTzq8VTjKC68ZKtTQGhTsA5",
+					"nodeType": "roleSplit",
+					"parameters": [ {
+						"name": "mode",
+						"value": "all-success"
+					} ]
+				}, {
+					"children": [],
+					"id": "cYEERbe36B4GLp6Lk5z5HM55SHvg9zOG",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "var",
+						"value": "turret_destroyed"
+					}, {
+						"name": "value",
+						"value": "true"
+					}, {
+						"name": "scriptName",
+						"value": "store"
+					} ],
+					"scriptName": "store"
+				} ],
+				"id": "0SS7MVXCdkzM3aJH1eYhvO1gTkbj3cDb",
+				"nodeType": "sequence",
+				"parameters": []
+			}, {
+				"children": [ {
+					"children": [ {
+						"children": [],
+						"id": "So1wKvnQoupqsdHCg0MHMU75KyX6KQ2B",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "var",
+							"value": "abc"
+						}, {
+							"name": "value",
+							"value": "nota_sta_hillCapture.HillPoints()"
+						}, {
+							"name": "scriptName",
+							"value": "store"
+						} ],
+						"scriptName": "store"
+					}, {
+						"children": [],
+						"id": "85MVv9u3RGA5xUj5HRtwItFOm2JXiS3Z",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "var",
+							"value": "final"
+						}, {
+							"name": "value",
+							"value": "true"
+						}, {
+							"name": "scriptName",
+							"value": "store"
+						} ],
+						"scriptName": "store"
+					} ],
+					"id": "a8ZFFzEXcZz44sWE26HFv8lmTi1KiKSg",
+					"nodeType": "sequence",
+					"parameters": []
+				}, {
+					"children": [],
+					"id": "s9cpM2B5fEWOO4yyTholBUZHrZoCjffX",
+					"nodeType": "success",
+					"parameters": []
+				} ],
+				"id": "xNQCXZ6JrondOwFSFp0yZLNjy1WWQye5",
+				"nodeType": "luaCondition",
+				"parameters": [ {
+					"name": "expression",
+					"value": "final == nil"
+				}, {
+					"name": "repeat",
+					"value": "false"
+				} ]
+			} ],
+			"id": "UErZ6p6XJC91wzKMUF1vz0GsV1PEIWeW",
+			"nodeType": "luaCondition",
+			"parameters": [ {
+				"name": "expression",
+				"value": "turret_destroyed == nil"
+			}, {
+				"name": "repeat",
+				"value": "false"
+			} ]
+		} ],
+		"id": "yIAv1sgCje0hJM6bRFrNkeNGF4pBj75E",
+		"nodeType": "sequence",
+		"parameters": []
+	}
+}
